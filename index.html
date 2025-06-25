@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Admin Panel</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="brand">Brand.</div>
+      <ul>
+        <li><i class="fas fa-th-large"></i><span>Dashboard</span></li>
+        <li><i class="fas fa-user-graduate"></i><span>Students</span></li>
+        <li><i class="fas fa-chalkboard-teacher"></i><span>Teachers</span></li>
+        <li><i class="fas fa-users"></i><span>Employees</span></li>
+        <li><i class="fas fa-chart-line"></i><span>Analytics</span></li>
+        <li><i class="fas fa-dollar-sign"></i><span>Earnings</span></li>
+        <li><i class="fas fa-cog"></i><span>Settings</span></li>
+        <li><i class="fas fa-question-circle"></i><span>Help</span></li>
+      </ul>
+    </aside>
+
+    <main>
+      <header>
+        <div class="search-box">
+          <input type="text" placeholder="search here" />
+          <i class="fas fa-search"></i>
+        </div>
+        <div class="icons">
+          <i class="fas fa-bell"></i>
+          <img src="girl avatar img.png" alt="avatar" />
+        </div>
+      </header>
+
+      <section class="cards">
+        <div class="card"><i class="fas fa-user-graduate"></i><div><h2>1217</h2><p>Students</p></div></div>
+        <div class="card"><i class="fas fa-chalkboard-teacher"></i><div><h2>42</h2><p>Teachers</p></div></div>
+        <div class="card"><i class="fas fa-users"></i><div><h2>68</h2><p>Employees</p></div></div>
+        <div class="card"><i class="fas fa-dollar-sign"></i><div><h2>$4500</h2><p>Earnings</p></div></div>
+      </section>
+
+      <section class="charts">
+        <div class="chart-box">
+          <h3>Earnings (past 12 months)</h3>
+          <canvas id="lineChart"></canvas>
+        </div>
+        <div class="chart-box">
+          <h3>Employees</h3>
+          <canvas id="doughnutChart"></canvas>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
